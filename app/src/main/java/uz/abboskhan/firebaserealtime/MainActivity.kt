@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
 //                    val data = i.getValue(CountryData::class.java)
 //                    mList.add(data!!)
 //                }
-                adapter = CategoryAdapter(mList)
+                adapter = CategoryAdapter(mList,this)
                 binding.rewCategory.setHasFixedSize(true)
                 binding.rewCategory.layoutManager = LinearLayoutManager(this@MainActivity)
                 binding.rewCategory.adapter = adapter
